@@ -2026,30 +2026,30 @@
 
 // console.log(union([1,2,4,5,7], [2,3,5,6])); 
 
-function longestSubarraySumK(arr, K) {
-  let prefixSum = 0;
-  let maxLen = 0;
-  const map = new Map();
+// function longestSubarraySumK(arr, K) {
+//   let prefixSum = 0;
+//   let maxLen = 0;
+//   const map = new Map();
 
-  for (let i = 0; i < arr.length; i++) {
-    prefixSum += arr[i];
+//   for (let i = 0; i < arr.length; i++) {
+//     prefixSum += arr[i];
 
-    if (prefixSum === K) {
-      maxLen = i + 1;
-    }
+//     if (prefixSum === K) {
+//       maxLen = i + 1;
+//     }
 
-    if (map.has(prefixSum - K)) {
-		let length = i-map.get(prefixSum-K);
-      maxLen = Math.max(maxLen, length);
-    }
+//     if (map.has(prefixSum - K)) {
+// 		let length = i-map.get(prefixSum-K);
+//       maxLen = Math.max(maxLen, length);
+//     }
 
-    if (!map.has(prefixSum)) {
-      map.set(prefixSum, i);
-    }
-  }
+//     if (!map.has(prefixSum)) {
+//       map.set(prefixSum, i);
+//     }
+//   }
 
-  return maxLen;
-}
+//   return maxLen;
+// }
 
-// Example
-console.log(longestSubarraySumK([1, -1, 5, -2, 3], 3)); // Output: 4
+// // Example
+// console.log(longestSubarraySumK([1, -1, 5, -2, 3], 3)); // Output: 4
