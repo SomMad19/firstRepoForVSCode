@@ -2038,6 +2038,12 @@
 //       maxLen = i + 1;
 //     }
 
+
+
+
+
+// SAMMED
+
 //     if (map.has(prefixSum - K)) {
 // 		let length = i-map.get(prefixSum-K);
 //       maxLen = Math.max(maxLen, length);
